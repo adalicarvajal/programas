@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  int anio,res,res2,res3,res4;
+  printf("ingrese el anio:");
+  scanf("%d",&anio);
+  res=anio%100;
+  if(res==0)
+  {
+      res2=anio%4;
+      res3=anio%400;
+      if (res2==0 &&res3==0)
+        printf("el anio es bisiesto");
+      else
+        printf("el anio no es bisiesto");
+    }
+    else
+        res4=anio%4;
+        if (res4==0)
+            printf("el anio es bisiesto");
+        else
+            printf("el anio no es bisiesto");
+
+    return 0;
+}
