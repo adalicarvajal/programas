@@ -1,0 +1,51 @@
+#include <conio.h>
+#include <stdio.h>
+
+int main ()
+
+{
+double num1,num2,num3,num4,calf;
+
+printf(" ingrese primera nota: ");
+scanf("%lf",&num1);
+		 while ( num1< 0 || num1 > 20 )
+    {
+        printf( "\n   ERROR: Nota incorrecta, debe ser >= 0 y <= 20\n" );
+        printf( "\n   Introduzca nota (real): " );
+        scanf( "%lf", &num1 );
+    }
+
+printf("\n ingrese su segunda nota: ");
+scanf("%lf",&num2);
+ while ( num2< 0 || num2 > 20 )
+    {
+        printf( "\n   ERROR: Nota incorrecta, debe ser >= 0 y <= 20\n" );
+        printf( "\n   Introduzca nota (real): " );
+        scanf( "%lf", &num2 );
+    }
+
+printf("\n ingrese su tercera nota: ");
+scanf("%lf",&num3);
+ while ( num3< 0 || num3 > 20 )
+    {
+        printf( "\n   ERROR: Nota incorrecta, debe ser >= 0 y <= 20\n" );
+        printf( "\n   Introduzca nota (real): " );
+        scanf( "%lf", &num3 );
+    }
+
+printf("\n ingrese su cuarta nota: ");
+scanf("%lf",&num4);
+
+ while ( num4< 0 || num4 > 20 )
+    {
+        printf( "\n   ERROR: Nota incorrecta, debe ser >= 0 y <= 20\n" );
+        printf( "\n   Introduzca nota (real): " );
+        scanf( "%lf", &num4 );
+    }
+
+calf=(num1+num2+num3+num4)/4;
+
+printf("\n su promedio final es %lf",calf);
+getch();
+return 0;
+}
